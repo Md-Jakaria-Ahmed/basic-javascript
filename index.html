@@ -8,38 +8,27 @@
     <title>Home Tutorial JS</title>
 </head>
 
-<body style="text-align: center">
+<body>
 
-    <h2>Difference between Var, Let, Const</h2>
+    <h2>The Object Datatype</h2>
+    <p>The object data type can contain:</p>
+    <ol>
+        <li>An object</li>
+        <li>An array</li>
+        <li>A date</li>
+    </ol>
 
     <script>
 
-        // var: update and re-declear 
-        document.write("<h3> Introduce with var </h3>");
-        var m = 10;
-        document.write("declear var: " + m + "<br>");
-        m = 15;
-        document.write("update var: " + m + "<br>");
-        var m = 25;
-        document.write("re-declear var: " + m + "<br>");
-
-        document.write("<br> <br>");
-
-        // let: update but not permission to re-declear 
-        document.write("<h3> Introduce with let </h3>");
-        let p = 10;
-        document.write("declear let: " + p + "<br>");
-        p = 12;
-        document.write("update let: " + p + "<br>");
-        // not able to re-decleare => let p = 5;
-
-
-        document.write("<br> <br>");
-        // const: no update and re-declear permission
-        document.write("<h3> Introduce with const </h3>");
-        const q = 15;
-        document.write("declear only const: " + q);
-
+        // Object:
+        const person = { firstName: "John", lastName: "Doe" };
+        document.write("object type object: " + person.firstName + " " + person.lastName);
+        // Array object:
+        const cars = ["Saab", "Volvo", "BMW"];
+        document.write("<br> object type array: " + cars);
+        // Date object:
+        const date = new Date("2023-05-29");
+        document.write("<br> object type date: " + date);
     </script>
 
 </body>
